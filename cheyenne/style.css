@@ -1,0 +1,229 @@
+body {
+	background-image: url('img/backgroundtest.png');
+  	background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+.login-card, .register-card {
+    min-height: 400px;
+    width: 300px;
+    padding: 40px;
+    background-color: white;
+    border: 15px solid #7b2425;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 200px;
+}
+.login-title, .register-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.login-form, .register-form {
+    margin-top: 20px;
+}
+.login-form input[type="text"], .login-form input[type="password"], .register-form input[type="text"], .register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #7b2425;
+    outline: none;
+}
+.login-form input[type="text"]::placeholder, .login-form input[type="password"]::placeholder, .register-form input[type="text"]::placeholder, .register-form input[type="password"]::placeholder {
+    font-size: 16px;
+    color: rgba(59, 60, 55, 255);
+}
+.login-button, .register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b2425;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+	align-items: flex-end;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    color: #7b2425;
+    text-align: center;
+    flex-direction: row-reverse;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+	max-height: 45px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #7b2425;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: rgba(240, 72, 87, 0.1);
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+}
+
+.nav-links a {
+    display: block;
+}
+
+.nav-links a + a {
+    margin-right: 20px; 
+}
+.custom-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 15px solid #7b2425;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.custom-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.custom-form input[type="text"], .custom-form textarea, .custom-form input[type="date"], .custom-form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #7b2425;
+    outline: none;
+}
+.custom-form textarea {
+    resize: vertical;
+}
+.custom-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b2425;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #7b2425;
+}
+th {
+    background-color: #7b2425;
+    color: white;
+}
+tbody tr:hover {
+    background-color: rgba(240, 72, 87, 0.1);
+}
+.btn-container {
+    display: flex;
+    gap: 5px;
+}
+.btn-container input[type="submit"] {
+    background-color: #7b2425;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-container input[type="submit"]:hover {
+    background-color: #602C34;
+}.total-hours-container, .search-form {
+    margin: 20px 0;
+    text-align: center;
+}
+.total-hours {
+    display: inline-block;
+}
+.total-hours-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7b2425;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.search-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #7b2425;
+}
+.search-form input[type="date"] {
+    width: 10%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #7b2425;
+    border-radius: 5px;
+    outline: none;
+}
+.search-form button {
+    width: 10%;
+    padding: 10px;
+    background-color: #7b2425;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #7b2425;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    outline: none;
+	border: 1px solid #7b2425;
+}
+.pagination a:hover,
+.pagination a:active {
+    background-color: white;
+    color: #7b2425;
+    border: 1px solid #7b2425;
+}
